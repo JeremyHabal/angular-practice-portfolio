@@ -1,0 +1,39 @@
+.nav-listener-item {
+  height: 400px;
+  width: 600px;
+
+  &--blue {
+    background-color: hsl(var(--su));
+    color: white;
+  }
+  &--green {
+    background-color: hsl(var(--wa));
+    color: white;
+  }
+  &--yellow {
+    background-color: hsl(var(--er));
+    color: white;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__button {
+    background-color: theme("colors.white");
+    color: black;
+    order: none;
+    margin-right: 2rem;
+  }
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    width: 25%;
+    align-self: end;
+  }
+}

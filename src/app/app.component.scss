@@ -1,0 +1,9 @@
+@import "global";
+
+.nav-links {
+  @include my-background();
+
+  a {
+    color: inherit;
+  }
+}
