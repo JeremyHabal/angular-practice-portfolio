@@ -1,8 +1,11 @@
-<main>
+<main [attr.data-theme]="themeName" class="main-container">
+  <!-- <button class="btn btn-primary" (click)="changeTheme()">Click Me</button> -->
   <header>
-    <div class="navbar bg-base-300">
+    <div class="navbar bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Jeremy Ryan Habal</a>
+        <a class="btn btn-base-100 bg-base-100 normal-case text-xl"
+          >Jeremy Ryan Habal</a
+        >
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal p-0">

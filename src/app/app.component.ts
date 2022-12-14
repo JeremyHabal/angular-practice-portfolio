@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   navItems: any;
   navItemsArray: any;
+  themeName: string;
 
   constructor(
     private linkService: LinkListenerService,
@@ -20,10 +21,15 @@ export class AppComponent {
     Object.keys(this.navItems).forEach((key) => {
       this.navItemsArray.push(this.navItems[key]);
     });
+    this.themeName = 'jrTheme';
   }
 
   linkClick(item: any) {
     this.router.navigate([item['link']]);
     this.linkService.setNavItem(item);
+  }
+
+  changeTheme() {
+    this.themeName = 'cupcake';
   }
 }

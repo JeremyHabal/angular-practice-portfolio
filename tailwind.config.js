@@ -22,8 +22,26 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      serif: ["Bitter", "serif"],
+      mono: ["Fira Code", "mono"],
     },
+  },
+  daisyui: {
+    themes: [
+      {
+        jrTheme: {
+          primary: "#5B2946",
+          "primary-content": "#F4EBE2",
+          secondary: "#F75A56",
+          "secondary-content": "#5B2946",
+          accent: "#D5BCB4",
+          neutral: "#F4EBE2",
+          "neutral-content": "#5B2946",
+          "base-100": "#FFFFFF",
+          "base-content": "#5B2946",
+        },
+      },
+    ],
   },
   plugins: [require("daisyui")],
 };
