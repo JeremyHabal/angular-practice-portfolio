@@ -23,7 +23,7 @@ export class NavbarComponent {
   }
 
   linkClick(item: any) {
-    this.router.navigate([item['link']]);
-    this.linkService.setNavItem(item);
+    // this.router.navigate([item['link']]);
+    // this.linkService.setNavItem(item);
   }
 }

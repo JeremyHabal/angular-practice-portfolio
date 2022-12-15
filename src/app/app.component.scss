@@ -1,5 +1,9 @@
 @import "global";
 
+:root {
+  scroll-behavior: smooth;
+}
+
 :host {
   display: flex;
   flex-direction: column;

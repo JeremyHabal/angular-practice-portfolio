@@ -23,6 +23,6 @@ export class ContactMeComponent {
       },
     });
 
-    this.linkService.setNavItem(this.linkService.navItems[this.router.url]);
+    // this.linkService.setNavItem(this.linkService.navItems[this.router.url]);
   }
 }

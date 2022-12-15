@@ -18,8 +18,8 @@ export class HeroBannerComponent {
   ) {
     this.navItem =
       this.linkService.navItems[Object.keys(this.linkService.navItems)[0]];
-    this.bannerClass = '';
-    this.changeBannerClass();
+    this.bannerClass = 'home';
+    // this.changeBannerClass();
 
     this.linkSubscription = this.linkService.activeNavItemSubject$.subscribe({
       next: (newItem) => {

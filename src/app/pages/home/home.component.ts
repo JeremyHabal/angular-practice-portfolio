@@ -23,6 +23,6 @@ export class HomeComponent {
       },
     });
 
-    this.linkService.setNavItem(this.linkService.navItems[this.router.url]);
+    // this.linkService.setNavItem(this.linkService.navItems[this.router.url]);
   }
 }

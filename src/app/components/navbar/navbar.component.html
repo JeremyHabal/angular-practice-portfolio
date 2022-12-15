@@ -29,17 +29,17 @@
           </li>
         </ul>
       </div>
-      <button class="btn-neutral btn-square">
+      <a [href]="'/'" class="btn-neutral btn-square">
         <img src="./assets/icon/logo.svg" class="h-14 w-14" />
-      </button>
+      </a>
     </div>
     <div class="navbar-end">
       <div class="hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
           <li *ngFor="let item of navItemsArray">
-            <button (click)="linkClick(item)" class="btn btn-neutral">
+            <a [href]="'/#' + item['id']" class="btn btn-neutral">
               {{ item["name"] }}
-            </button>
+            </a>
           </li>
         </ul>
       </div>

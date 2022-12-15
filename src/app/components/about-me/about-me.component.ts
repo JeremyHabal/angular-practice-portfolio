@@ -29,7 +29,7 @@ export class AboutMeComponent {
       },
     });
 
-    this.linkService.setNavItem(this.linkService.navItems[this.router.url]);
+    // this.linkService.setNavItem(this.linkService.navItems[this.router.url]);
   }
 
   changeAboutList(type: 'hobbies' | 'skills'): void {
