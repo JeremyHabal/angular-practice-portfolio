@@ -23,9 +23,9 @@ html {
 }
 
 .btn {
+  @apply text-base;
   @apply px-6;
   @apply normal-case;
-  @apply text-base;
   @apply font-normal;
   @apply tracking-wide;
 }

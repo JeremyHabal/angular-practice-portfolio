@@ -23,9 +23,9 @@
           class="menu menu-compact dropdown-content p-2 bg-base-100 w-52"
         >
           <li *ngFor="let item of navItemsArray">
-            <button (click)="linkClick(item)">
+            <a [href]="'/#' + item['id']" class="text-base">
               {{ item["name"] }}
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -44,8 +44,10 @@
         </ul>
       </div>
       <a
-        href="./assets/pdf/Habal, Jeremy Ryan - Resume.pdf"
+        href="./assets/pdf/Resume.pdf"
         class="btn btn-outline btn-base-100 ml-5"
+        target="_blank"
+        rel="noopener noreferrer"
         >Resume</a
       >
     </div>
