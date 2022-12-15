@@ -6,6 +6,7 @@ import { Subject } from 'rxjs';
 })
 export class LinkListenerService {
   activeNavItemSubject$: Subject<string>;
+  activeItem: number;
   navItems: any;
 
   constructor() {
@@ -27,6 +28,7 @@ export class LinkListenerService {
         icon: '',
       },
     };
+    this.activeItem = 0;
   }
 
   setNavItem(newItem: any) {

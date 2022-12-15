@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { LinkListenerService } from 'src/app/link-listener.service';
 import { Router } from '@angular/router';
 
@@ -16,7 +16,8 @@ export class HeroBannerComponent {
     private linkService: LinkListenerService,
     private router: Router
   ) {
-    this.navItem = this.linkService.activeNavItemSubject$;
+    this.navItem =
+      this.linkService.navItems[Object.keys(this.linkService.navItems)[0]];
     this.bannerClass = '';
     this.changeBannerClass();
 

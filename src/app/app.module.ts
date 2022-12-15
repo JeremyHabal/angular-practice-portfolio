@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HeroBannerComponent } from './components/hero-banner/hero-banner.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeroBannerComponent } from './components/hero-banner/hero-banner.compon
     ContactMeComponent,
     AboutMeComponent,
     HeroBannerComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
