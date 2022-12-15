@@ -10,6 +10,8 @@ import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HeroBannerComponent } from './components/hero-banner/hero-banner.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { WorksComponent } from './components/works/works.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AboutMeComponent,
     HeroBannerComponent,
     NavbarComponent,
+    WorksComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
