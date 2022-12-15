@@ -4,16 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  @apply no-animation;
+}
+
 html {
   @apply font-serif;
 }
 
 .btn,
 .card,
-.card.image-full::before {
+.card.image-full::before,
+.menu[class*=" px-"]:not(.menu[class*=" px-0"]) li > *,
+.menu[class^="px-"]:not(.menu[class^="px-0"]) li > *,
+.menu[class*=" p-"]:not(.menu[class*=" p-0"]) li > *,
+.menu[class^="p-"]:not(.menu[class^="p-0"]) li > * {
   @apply rounded-none;
+}
+
+.btn {
+  @apply px-6;
+  @apply normal-case;
+  @apply text-base;
+  @apply font-normal;
+  @apply tracking-wide;
+}
+
+.btn-neutral {
+  @apply border-0;
+  @apply hover:bg-neutral;
+  @apply hover:text-accent;
+  @apply focus:bg-neutral;
+  @apply font-mono;
 }
 
 .card.image-full::before {
   opacity: 85%;
+  background-color: hsl(var(--s) / var(--tw-bg-opacity));
 }

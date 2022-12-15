@@ -1,13 +1,5 @@
 @import "global";
 
-.nav-links {
-  @include my-background();
-
-  a {
-    color: inherit;
-  }
-}
-
 .main-container {
   height: 100vh;
 }
