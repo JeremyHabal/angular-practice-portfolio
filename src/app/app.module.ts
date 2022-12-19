@@ -12,6 +12,7 @@ import { HeroBannerComponent } from './components/hero-banner/hero-banner.compon
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WorksComponent } from './components/works/works.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WorksProjectsComponent } from './components/works-projects/works-projects.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     WorksComponent,
     FooterComponent,
+    WorksProjectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
