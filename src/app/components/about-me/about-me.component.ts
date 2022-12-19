@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AboutMeComponent {
   linkSubscription: any;
   navItem: any;
-  selectedAboutList: 'hobbies' | 'skills';
+  selectedAboutList: 'frontend' | 'backend' | 'general' | 'creative';
 
   constructor(
     private linkService: LinkListenerService,
@@ -21,7 +21,7 @@ export class AboutMeComponent {
       link: '',
       icon: '',
     };
-    this.selectedAboutList = 'hobbies';
+    this.selectedAboutList = 'frontend';
 
     this.linkSubscription = this.linkService.activeNavItemSubject$.subscribe({
       next: (newItem) => {
@@ -32,7 +32,7 @@ export class AboutMeComponent {
     // this.linkService.setNavItem(this.linkService.navItems[this.router.url]);
   }
 
-  changeAboutList(type: 'hobbies' | 'skills'): void {
+  changeAboutList(type: 'frontend' | 'backend' | 'general' | 'creative'): void {
     this.selectedAboutList = type;
   }
 }

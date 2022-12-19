@@ -1,29 +1,73 @@
-<div class="h-[200vh] bg-secondary" id="about-me">
-  <!-- <div class="flex justify-center mt-5">
-    <div class="card w-96 card-side bg-neutral">
-      <figure><img src="./assets/img/me.jpg" class="h-full" /></figure>
-      <div class="card-body">
-        <h2 class="card-title">{{ navItem["name"] }}</h2>
-        <ul class="menu menu-vertical lg:menu-horizontal rounded-box">
-          <li>
-            <a
-              (click)="changeAboutList('hobbies')"
-              class="btn btn-primary text-primary-content"
-              >Hobbies</a
-            >
-          </li>
-          <li>
-            <a
-              (click)="changeAboutList('skills')"
-              class="btn btn-primary text-primary-content"
-              >Skills</a
-            >
-          </li>
-        </ul>
-        <app-about-me-hobbies-skills
-          [selectedList]="selectedAboutList"
-        ></app-about-me-hobbies-skills>
+<div
+  class="min-h-[200vh] bg-secondary flex flex-col p-4 md:py-0 md:px-32 xl:px-72"
+  id="about-me"
+>
+  <div class="min-h-screen md:w-[80vh] grid items-center">
+    <div>
+      <h1 class="text-5xl font-bold">A little about me.</h1>
+      <hr class="my-5 md:w-3/6 border-info-content" />
+      <p class="text-xl my-7">
+        My exposure to tech since childhood has led me to my path as a
+        <b>Front-end Developer</b>. Along with that, seeing amazing designs
+        online developed my interest in aesthetic <b>Visual Design</b>.
+      </p>
+      <p class="text-xl my-7">
+        As a developer and as a designer, I have a natural passion to create
+        things that I will be proud of. It is my goal to not only
+        <b>develop polished work</b>, but also to channel my creativity through
+        it by <b>designing visually appealing experiences</b>.
+      </p>
+      <hr class="my-5 md:w-3/6 border-info-content" />
+      <h1 class="text-2xl font-bold">Interests:</h1>
+    </div>
+  </div>
+
+  <div class="min-h-screen grid items-center justify-center">
+    <div>
+      <h1 class="text-4xl font-bold">Technologies that I am familiar with.</h1>
+      <hr class="my-5 w-3/6 border-info-content" />
+      <p class="text-xl my-7">Tools of the trade.</p>
+      <div class="flex">
+        <div>
+          <ul
+            class="menu menu-compact lg:menu-normal bg-base-100 w-56 p-2 rounded-box"
+          >
+            <li>
+              <a
+                (click)="changeAboutList('frontend')"
+                class="btn btn-primary text-primary-content"
+                >Frontend</a
+              >
+            </li>
+            <li>
+              <a
+                (click)="changeAboutList('backend')"
+                class="btn btn-primary text-primary-content"
+                >Backend</a
+              >
+            </li>
+            <li>
+              <a
+                (click)="changeAboutList('general')"
+                class="btn btn-primary text-primary-content"
+                >General</a
+              >
+            </li>
+            <li>
+              <a
+                (click)="changeAboutList('creative')"
+                class="btn btn-primary text-primary-content"
+                >Creative</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <app-about-me-hobbies-skills
+            [selectedList]="selectedAboutList"
+          ></app-about-me-hobbies-skills>
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
 </div>

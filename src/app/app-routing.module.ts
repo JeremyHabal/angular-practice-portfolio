@@ -12,14 +12,14 @@ const routes: Routes = [
         path: '',
         component: HomeComponent,
       },
-      {
-        path: 'about-me',
-        component: AboutMeComponent,
-      },
-      {
-        path: 'contact-us',
-        component: ContactMeComponent,
-      },
+      // {
+      //   path: 'about-me',
+      //   component: AboutMeComponent,
+      // },
+      // {
+      //   path: 'contact-us',
+      //   component: ContactMeComponent,
+      // },
     ],
   },
 ];
