@@ -15,7 +15,7 @@ export class AboutMeHobbiesSkillsComponent {
   constructor() {
     this.selectedList = 'frontend';
     this.frontend = [
-      'JS',
+      'JavaScript',
       'TypeScript',
       'React',
       'Angular',
@@ -25,7 +25,7 @@ export class AboutMeHobbiesSkillsComponent {
       'CSS3',
     ];
     this.backend = ['Java', 'C++', 'MySQL'];
-    this.general = ['Git', 'GitHub', 'VsCode', 'BitBucket', 'NodeJS'];
+    this.general = ['Git', 'GitHub', 'VSCode', 'BitBucket', 'NodeJS'];
     this.creative = [
       'Adobe Photoshop',
       'Adobe XD',
