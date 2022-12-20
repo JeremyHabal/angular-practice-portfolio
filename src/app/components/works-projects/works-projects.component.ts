@@ -18,7 +18,7 @@ export class WorksProjectsComponent {
           'An e-commerce website that sells K-pop merchandise. I worked on the design and coded the front-end of the website. I went with pastel colors to emulate a friendly and welcoming vibe to the website.',
         tags: ['Java', 'Bootstrap', 'Adobe XD'],
         image: './assets/img/works/Seoul-Soul.jpg',
-        github: 'https://github.com/jeremyhabal/angular-practice-portfolio.git',
+        github: 'https://github.com/nadjitan/KpOnlineStore.git',
       },
       {
         name: 'WarpZone',
@@ -36,7 +36,7 @@ export class WorksProjectsComponent {
           'A capstone project about developing a JavaScript Package that aims to improve a website\'s user navigability by allowing the user to record the "ideal" way to navigate the site and also record website tester performance. I worked on conceptualizing the package and its UI Design.',
         tags: ['React', 'Tailwind'],
         image: './assets/img/works/Surveyor.jpg',
-        github: '',
+        github: 'https://github.com/nadjitan/surveyor.git',
       },
       {
         name: 'Conclave',

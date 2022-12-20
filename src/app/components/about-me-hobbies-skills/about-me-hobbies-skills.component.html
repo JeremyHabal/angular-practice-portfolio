@@ -1,54 +1,42 @@
-<div
-  *ngIf="selectedList === 'frontend'"
-  class="grid grid-rows-2 grid-flow-col w-[80vh] gap-4"
->
+<div *ngIf="selectedList === 'frontend'" class="grid grid-cols-4 gap-4">
   <div *ngFor="let hobby of frontend" class="card bg-base-100">
-    <div class="card-body">
+    <div class="card-body items-center text-center p-4 skill-container">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
-        class="w-100 h-100 iconFill"
+        class="skill-icon"
       />
       <h2 class="font-mono">{{ hobby }}</h2>
     </div>
   </div>
 </div>
-<div
-  *ngIf="selectedList === 'backend'"
-  class="grid grid-rows-2 grid-flow-col w-[80vh] gap-4"
->
+<div *ngIf="selectedList === 'backend'" class="grid grid-cols-4 gap-4">
   <div *ngFor="let hobby of backend" class="card bg-base-100">
-    <div class="card-body">
+    <div class="card-body items-center text-center p-4 skill-container">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
-        class="w-100 h-100 iconFill"
+        class="skill-icon"
       />
       <h2 class="font-mono">{{ hobby }}</h2>
     </div>
   </div>
 </div>
-<div
-  *ngIf="selectedList === 'general'"
-  class="grid grid-rows-2 grid-flow-col w-[80vh] gap-4"
->
+<div *ngIf="selectedList === 'general'" class="grid grid-cols-4 gap-4">
   <div *ngFor="let hobby of general" class="card bg-base-100">
-    <div class="card-body">
+    <div class="card-body items-center text-center p-4 skill-container">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
-        class="w-100 h-100 iconFill"
+        class="skill-icon"
       />
       <h2 class="font-mono">{{ hobby }}</h2>
     </div>
   </div>
 </div>
-<div
-  *ngIf="selectedList === 'creative'"
-  class="grid grid-rows-2 grid-flow-col w-[80vh] gap-4"
->
+<div *ngIf="selectedList === 'creative'" class="grid grid-cols-4 gap-4">
   <div *ngFor="let hobby of creative" class="card bg-base-100">
-    <div class="card-body">
+    <div class="card-body items-center text-center p-4 skill-container">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
-        class="w-100 h-100 iconFill"
+        class="skill-icon"
       />
       <h2 class="font-mono">{{ hobby }}</h2>
     </div>
