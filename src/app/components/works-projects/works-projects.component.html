@@ -1,52 +1,42 @@
-<div class="justify-center mt-5 grid grid-cols-2">
+<div class="justify-center mb-5 grid lg:grid-cols-2 gap-4">
   <div
     *ngFor="let project of worksProjects"
-    class="card w-96 bg-neutral image-full p-4"
+    class="card min-h-96 bg-cover bg-neutral bg-blend-luminosity bg-center image-full"
+    style="background-image: url('{{ project.image }}')"
   >
-    <figure>
+    <!-- <figure>
       <img [src]="project.image" class="mix-blend-luminosity" />
-    </figure>
+    </figure> -->
     <div class="card-body">
-      <h2 class="card-title">{{ project.name }}</h2>
+      <span class="font-mono text-sm text-accent">{{ project.category }}</span>
+      <h2 class="text-3xl font-bold mt-1 mb-5">{{ project.name }}</h2>
       <p>
         {{ project.description }}
       </p>
-      <ul>
-        <li *ngFor="let tag of project.tags">{{ tag }}</li>
+      <ul class="flex">
+        <li
+          *ngFor="let tag of project.tags"
+          class="mr-4 mt-5 font-mono text-sm"
+        >
+          {{ tag }}
+        </li>
       </ul>
-      <a
-        [href]="'./assets/img/works/' + project.name + '.jpg'"
-        class="btn btn-outline btn-base-100 ml-5"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Link</a
-      >
-      <a
-        *ngIf="project.github"
-        [href]="project.github"
-        class="btn btn-outline btn-base-100 ml-5"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Github</a
-      >
+      <div class="mt-4 flex">
+        <a
+          [href]="'./assets/img/works/' + project.name + '.jpg'"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mr-2"
+          ><img src="./assets/icon/external-link.svg" class="w-8 h-8"
+        /></a>
+        <a
+          *ngIf="project.github"
+          [href]="project.github"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/icon/skills/GitHub.svg" class="w-8 h-8"
+        /></a>
+      </div>
     </div>
   </div>
 </div>
-
-<!-- <div class="card w-96 bg-neutral image-full p-4">
-  <figure>
-    <img
-      src="https://placeimg.com/400/225/arch"
-      class="mix-blend-luminosity"
-      alt="Shoes"
-    />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Seoul-Soul</h2>
-    <p>
-      An e-commerce website that sells K-pop merchandise. I worked on the design
-      and coded the front-end of the website. I went with pastel colors to
-      emulate a friendly and welcoming vibe to the website.
-    </p>
-  </div>
-</div> -->
