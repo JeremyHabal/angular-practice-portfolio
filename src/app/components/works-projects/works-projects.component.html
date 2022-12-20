@@ -1,0 +1,42 @@
+<div class="justify-center mb-5 grid lg:grid-cols-2 gap-4">
+  <div
+    *ngFor="let project of worksProjects"
+    class="card min-h-96 bg-cover bg-neutral bg-blend-luminosity bg-center image-full"
+    style="background-image: url('{{ project.image }}')"
+  >
+    <!-- <figure>
+      <img [src]="project.image" class="mix-blend-luminosity" />
+    </figure> -->
+    <div class="card-body">
+      <span class="font-mono text-sm text-accent">{{ project.category }}</span>
+      <h2 class="text-3xl font-bold mt-1 mb-5">{{ project.name }}</h2>
+      <p>
+        {{ project.description }}
+      </p>
+      <ul class="flex">
+        <li
+          *ngFor="let tag of project.tags"
+          class="mr-4 mt-5 font-mono text-sm"
+        >
+          {{ tag }}
+        </li>
+      </ul>
+      <div class="mt-4 flex">
+        <a
+          [href]="'./assets/img/works/' + project.name + '.jpg'"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mr-2"
+          ><img src="./assets/icon/external-link.svg" class="w-8 h-8"
+        /></a>
+        <a
+          *ngIf="project.github"
+          [href]="project.github"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/icon/skills/GitHub.svg" class="w-8 h-8"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>

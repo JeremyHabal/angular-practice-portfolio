@@ -1,4 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  @apply no-animation;
+}
+
+html {
+  @apply font-serif;
+}
+
+.btn,
+.card,
+.card.image-full::before,
+.menu[class*=" px-"]:not(.menu[class*=" px-0"]) li > *,
+.menu[class^="px-"]:not(.menu[class^="px-0"]) li > *,
+.menu[class*=" p-"]:not(.menu[class*=" p-0"]) li > *,
+.menu[class^="p-"]:not(.menu[class^="p-0"]) li > * {
+  @apply rounded-none;
+}
+
+.btn {
+  @apply text-base;
+  @apply px-8;
+  @apply normal-case;
+  @apply font-normal;
+  @apply tracking-wider;
+}
+
+.btn-ghost {
+  @apply px-4;
+}
+
+.btn-neutral {
+  @apply border-0;
+  @apply hover:bg-neutral;
+  @apply hover:text-accent;
+  @apply focus:bg-neutral;
+  @apply font-mono;
+}
+
+.card.image-full::before {
+  opacity: 85%;
+  background-color: hsl(var(--s) / var(--tw-bg-opacity));
+}

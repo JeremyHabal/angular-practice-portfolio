@@ -1,21 +1,5 @@
-<main>
-  <header>
-    <div class="navbar bg-base-300">
-      <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Jeremy Ryan Habal</a>
-      </div>
-      <div class="flex-none">
-        <ul class="menu menu-horizontal p-0">
-          <li *ngFor="let item of navItemsArray">
-            <button (click)="linkClick(item)">
-              {{ item["name"] }}
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <app-hero-banner></app-hero-banner>
-
+<app-navbar></app-navbar>
+<main [attr.data-theme]="themeName" class="main-container">
   <router-outlet></router-outlet>
 </main>
+<app-footer></app-footer>

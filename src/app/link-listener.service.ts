@@ -6,27 +6,32 @@ import { Subject } from 'rxjs';
 })
 export class LinkListenerService {
   activeNavItemSubject$: Subject<string>;
+  activeItem: number;
   navItems: any;
 
   constructor() {
     this.activeNavItemSubject$ = new Subject();
     this.navItems = {
-      '/': {
-        name: 'Home',
-        link: '/',
-        icon: '',
-      },
       '/about-me': {
         name: 'About Me',
         link: '/about-me',
         icon: '',
+        id: 'about-me',
       },
-      '/contact-us': {
-        name: 'Contact Us',
-        link: '/contact-us',
+      '/works': {
+        name: 'Works',
+        link: '/',
         icon: '',
+        id: 'works',
+      },
+      '/contact-me': {
+        name: 'Contact Me',
+        link: '/contact-me',
+        icon: '',
+        id: 'contact-me',
       },
     };
+    this.activeItem = 0;
   }
 
   setNavItem(newItem: any) {

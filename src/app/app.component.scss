@@ -1,9 +1,11 @@
 @import "global";
 
-.nav-links {
-  @include my-background();
+:root {
+  scroll-behavior: smooth;
+}
 
-  a {
-    color: inherit;
-  }
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
