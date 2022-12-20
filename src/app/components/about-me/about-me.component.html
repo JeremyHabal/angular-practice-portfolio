@@ -1,9 +1,9 @@
 <div
-  class="min-h-[200vh] bg-secondary flex flex-col p-4 md:py-0 md:px-32 xl:px-72"
+  class="min-h-[200vh] bg-secondary flex flex-col py-4 px-4 md:px-0"
   id="about-me"
 >
-  <div class="min-h-screen md:w-[80vh] grid items-center">
-    <div>
+  <div class="min-h-screen grid items-center md:px-32 xl:px-72">
+    <div class="md:w-[80vh]">
       <h1 class="text-5xl font-bold">A little about me.</h1>
       <hr class="my-5 md:w-3/6 border-info-content" />
       <p class="text-xl my-7">
@@ -27,8 +27,36 @@
       <h1 class="text-4xl font-bold">Technologies that I am familiar with.</h1>
       <hr class="my-5 w-3/6 border-info-content" />
       <p class="text-xl my-7">Tools of the trade.</p>
-      <div class="flex">
-        <div>
+      <div class="dropdown lg:hidden mb-4 w-full">
+        <label tabindex="0" class="btn btn-outline btn-primary w-full"
+          >Select a Category<svg
+            class="ml-1 h-5 w-5"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.194 8.71a.75.75 0 0 0-.694-.46h-15a.75.75 0 0 0-.694.46.787.787 0 0 0 .16.824l7.5 7.5a.769.769 0 0 0 1.068 0l7.5-7.5a.788.788 0 0 0 .16-.825Z"
+            ></path>
+          </svg>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu p-2 bg-secondary w-full">
+          <li>
+            <a (click)="changeAboutList('frontend')">Front-end Development</a>
+          </li>
+          <li>
+            <a (click)="changeAboutList('backend')">Back-end Development</a>
+          </li>
+          <li>
+            <a (click)="changeAboutList('general')">General Development</a>
+          </li>
+          <li>
+            <a (click)="changeAboutList('creative')">Creatives</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex justify-center">
+        <div class="hidden lg:flex">
           <ul class="menu menu-compact lg:menu-normal w-64">
             <li>
               <a

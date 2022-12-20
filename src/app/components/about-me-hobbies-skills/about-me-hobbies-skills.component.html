@@ -1,44 +1,68 @@
-<div *ngIf="selectedList === 'frontend'" class="grid grid-cols-4 gap-4">
-  <div *ngFor="let hobby of frontend" class="card bg-base-100">
-    <div class="card-body items-center text-center p-4 skill-container">
+<div
+  *ngIf="selectedList === 'frontend'"
+  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+>
+  <div
+    *ngFor="let hobby of frontend"
+    class="card bg-base-100 grid items-center skill-container"
+  >
+    <div class="card-body place-items-center text-center p-4 w-full">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
         class="skill-icon"
       />
-      <h2 class="font-mono">{{ hobby }}</h2>
+      <h2 class="leading-none text-sm font-mono">{{ hobby }}</h2>
     </div>
   </div>
 </div>
-<div *ngIf="selectedList === 'backend'" class="grid grid-cols-4 gap-4">
-  <div *ngFor="let hobby of backend" class="card bg-base-100">
-    <div class="card-body items-center text-center p-4 skill-container">
+<div
+  *ngIf="selectedList === 'backend'"
+  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+>
+  <div
+    *ngFor="let hobby of backend"
+    class="card bg-base-100 grid items-center skill-container"
+  >
+    <div class="card-body place-items-center text-center p-4 w-full">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
         class="skill-icon"
       />
-      <h2 class="font-mono">{{ hobby }}</h2>
+      <h2 class="leading-none text-sm font-mono">{{ hobby }}</h2>
     </div>
   </div>
 </div>
-<div *ngIf="selectedList === 'general'" class="grid grid-cols-4 gap-4">
-  <div *ngFor="let hobby of general" class="card bg-base-100">
-    <div class="card-body items-center text-center p-4 skill-container">
+<div
+  *ngIf="selectedList === 'general'"
+  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+>
+  <div
+    *ngFor="let hobby of general"
+    class="card bg-base-100 grid items-center skill-container"
+  >
+    <div class="card-body place-items-center text-center p-4 w-full">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
         class="skill-icon"
       />
-      <h2 class="font-mono">{{ hobby }}</h2>
+      <h2 class="leading-none text-sm font-mono">{{ hobby }}</h2>
     </div>
   </div>
 </div>
-<div *ngIf="selectedList === 'creative'" class="grid grid-cols-4 gap-4">
-  <div *ngFor="let hobby of creative" class="card bg-base-100">
-    <div class="card-body items-center text-center p-4 skill-container">
+<div
+  *ngIf="selectedList === 'creative'"
+  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+>
+  <div
+    *ngFor="let hobby of creative"
+    class="card bg-base-100 grid items-center skill-container"
+  >
+    <div class="card-body place-items-center text-center p-4 w-full">
       <img
         [src]="'./assets/icon/skills/' + hobby + '.svg'"
         class="skill-icon"
       />
-      <h2 class="font-mono">{{ hobby }}</h2>
+      <h2 class="leading-none text-sm font-mono">{{ hobby }}</h2>
     </div>
   </div>
 </div>
