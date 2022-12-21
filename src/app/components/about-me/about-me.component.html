@@ -3,7 +3,7 @@
   id="about-me"
 >
   <div class="min-h-screen grid items-center md:px-32 xl:px-72">
-    <div class="md:w-[80vh]">
+    <div class="md:w-[40vw]">
       <h1 class="text-5xl font-bold">A little about me.</h1>
       <hr class="my-5 md:w-3/6 border-info-content" />
       <p class="text-xl my-7">
@@ -17,8 +17,25 @@
         <b>develop polished work</b>, but also to channel my creativity through
         it by <b>designing visually appealing experiences</b>.
       </p>
+      <div
+        class="bg-primary text-primary-content font-mono w-fit py-2 px-4 flex"
+      >
+        <img src="./assets/icon/location.svg" class="w-6 h-6 mr-2" />
+        <span>Quezon City, Philippines</span>
+      </div>
       <hr class="my-5 md:w-3/6 border-info-content" />
-      <h1 class="text-2xl font-bold">Interests:</h1>
+      <div>
+        <h1 class="text-2xl font-bold mb-3">Interests:</h1>
+        <div class="flex">
+          <div
+            *ngFor="let interest of interests"
+            class="tooltip"
+            attr.data-tip="{{ interest.name }}"
+          >
+            <img src="{{ interest.icon }}" class="w-10 h-10 mr-5" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -55,40 +72,24 @@
           </li>
         </ul>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center lg:divide-x">
         <div class="hidden lg:flex">
           <ul class="menu menu-compact lg:menu-normal w-64">
             <li>
-              <a
-                (click)="changeAboutList('frontend')"
-                class="text-secondary-content justify-start"
-                >Front-end Development</a
-              >
+              <a (click)="changeAboutList('frontend')">Front-end Development</a>
             </li>
             <li>
-              <a
-                (click)="changeAboutList('backend')"
-                class="text-secondary-content"
-                >Back-end Development</a
-              >
+              <a (click)="changeAboutList('backend')">Back-end Development</a>
             </li>
             <li>
-              <a
-                (click)="changeAboutList('general')"
-                class="text-secondary-content"
-                >General Development</a
-              >
+              <a (click)="changeAboutList('general')">General Development</a>
             </li>
             <li>
-              <a
-                (click)="changeAboutList('creative')"
-                class="text-secondary-content"
-                >Creatives</a
-              >
+              <a (click)="changeAboutList('creative')">Creatives</a>
             </li>
           </ul>
         </div>
-        <div>
+        <div class="pl-4">
           <app-about-me-hobbies-skills
             [selectedList]="selectedAboutList"
           ></app-about-me-hobbies-skills>

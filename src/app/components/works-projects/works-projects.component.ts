@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class WorksProjectsComponent {
   worksProjects: any;
-  worksProjectsArray: any;
 
   constructor() {
     this.worksProjects = [
