@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class AboutMeComponent {
   linkSubscription: any;
   navItem: any;
+  interests: any;
   selectedAboutList: 'frontend' | 'backend' | 'general' | 'creative';
 
   constructor(
@@ -21,6 +22,33 @@ export class AboutMeComponent {
       link: '',
       icon: '',
     };
+    this.interests = [
+      {
+        name: 'Technology',
+        icon: './assets/icon/technology.svg',
+      },
+      {
+        name: 'Digital Art & Design',
+        icon: './assets/icon/brush.svg',
+      },
+      {
+        name: 'Going to the gym',
+        icon: './assets/icon/gym.svg',
+      },
+      {
+        name: 'World History and Geography',
+        icon: './assets/icon/earth.svg',
+      },
+      {
+        name: 'Video Games',
+        icon: './assets/icon/game.svg',
+      },
+      {
+        name: 'Animals (especially cats)',
+        icon: './assets/icon/cat.svg',
+      },
+    ];
+
     this.selectedAboutList = 'frontend';
 
     this.linkSubscription = this.linkService.activeNavItemSubject$.subscribe({

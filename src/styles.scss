@@ -12,6 +12,32 @@ html {
   @apply font-serif;
 }
 
+h1 {
+  @apply text-5xl;
+  @apply font-bold;
+}
+
+h2 {
+  @apply text-4xl;
+  @apply font-bold;
+}
+
+h3 {
+  @apply text-3xl;
+  @apply font-bold;
+}
+
+h4 {
+  @apply text-2xl;
+  @apply font-bold;
+}
+
+hr {
+  @apply my-5;
+  @apply md:w-3/6;
+  @apply border-info-content;
+}
+
 .btn,
 .card,
 .card.image-full::before,
@@ -45,4 +71,14 @@ html {
 .card.image-full::before {
   opacity: 85%;
   background-color: hsl(var(--s) / var(--tw-bg-opacity));
+}
+
+.btn-white {
+  @apply btn;
+  @apply btn-outline;
+}
+
+.margin-1 {
+  @apply md:px-32;
+  @apply xl:px-72;
 }

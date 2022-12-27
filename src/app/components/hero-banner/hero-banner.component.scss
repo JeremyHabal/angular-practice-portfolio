@@ -1,3 +1,8 @@
 .hero-banner {
   background-attachment: fixed;
 }
+
+p {
+  @apply mb-14;
+  @apply text-xl;
+}
