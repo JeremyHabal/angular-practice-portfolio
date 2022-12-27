@@ -1,9 +1,36 @@
-.skill-icon {
+.card-grid {
+  @apply grid;
+  @apply grid-cols-2;
+  @apply sm:grid-cols-3;
+  @apply md:grid-cols-4;
+  @apply gap-4;
+}
+
+.card-container {
+  @apply card;
+  @apply bg-base-100;
+  @apply grid;
+  @apply items-center;
+  @apply h-32;
+  @apply w-32;
+  @apply rounded-none;
+}
+
+.card-content {
+  @apply card-body;
+  @apply place-items-center;
+  @apply text-center;
+  @apply p-4;
+  @apply w-full;
+}
+
+.card-icon {
   @apply h-12;
   @apply w-12;
 }
 
-.skill-container {
-  @apply h-32;
-  @apply w-32;
+.card-text {
+  @apply leading-none;
+  @apply text-sm;
+  @apply font-mono;
 }
